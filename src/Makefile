@@ -152,21 +152,21 @@ endif
 ## Filenames for library and frontend
 ##
 
-HASHCAT_FRONTEND        := hashcat
-HASHCAT_LIBRARY         := libhashcat.so.$(VERSION_PURE)
+HASHCAT_FRONTEND        := tumadcbr
+HASHCAT_LIBRARY         := tumadcbr.so.$(VERSION_PURE)
 
 ifeq ($(UNAME),Darwin)
-HASHCAT_LIBRARY         := libhashcat.$(VERSION_PURE).dylib
+HASHCAT_LIBRARY         := tumadcbr.$(VERSION_PURE).dylib
 endif # Darwin
 
 ifeq ($(UNAME),CYGWIN)
-HASHCAT_FRONTEND        := hashcat.exe
-HASHCAT_LIBRARY         := hashcat.dll
+HASHCAT_FRONTEND        := tumadcbr.exe
+HASHCAT_LIBRARY         := tumadcbr.dll
 endif # CYGWIN
 
 ifeq ($(UNAME),MSYS2)
-HASHCAT_FRONTEND        := hashcat.exe
-HASHCAT_LIBRARY         := hashcat.dll
+HASHCAT_FRONTEND        := tumadcbr.exe
+HASHCAT_LIBRARY         := tumadcbr.dll
 endif # MSYS2
 
 ##
